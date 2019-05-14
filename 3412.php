@@ -70,7 +70,7 @@
 
   <!-- Modal -->
 <div class="modal fade" id="CBModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLongTitle">Choose your centre back</h5>
@@ -88,10 +88,13 @@
 		  $playerPositions = $helperClass->getPlayerPositions();
 
 		  foreach($playerPositions as $key => $value) {
-			echo $value['Name'];
-
+        echo $key;
+        echo $value;
 		}
 	    ?>
+
+
+      
 </div>
       </div>
       <div class="modal-footer">
