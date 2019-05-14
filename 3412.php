@@ -1,4 +1,5 @@
-<?php include("connect.php"); ?>
+<?php include_once("connect.php"); ?>
+<?php include_once("helper.class.cb.php"); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -80,32 +81,18 @@
       <div class="modal-body">
       
       <?php
+      $helperClass = new HelperClass();
+      ?>
+        <div>
+	    <?php
+		  $playerPositions = $helperClass->getPlayerPositions();
 
-        // Create connection
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        // Check connection
-        if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-        } 
+		  foreach($playerPositions as $key => $value) {
+			echo $value['Name'];
 
-        $sql = "SELECT * FROM players WHERE Position LIKE '%CB%' ORDER BY RAND()LIMIT 5;";
-        $result = $conn->query($sql);
-        
-        if ($result->num_rows > 0) {
-         // output data of each row
-        while($row = $result->fetch_assoc()) {
-        echo "Name:".$row["Name"]. "Rank:". $row["Overall"]. "Age:" . $row["Age"] . "<br>";
-        }
-        } else {
-        echo "0 results";
-        }
-        $conn->close();
-    ?> 
-
-
-
-    
-
+		}
+	    ?>
+</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
