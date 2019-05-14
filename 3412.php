@@ -5,6 +5,8 @@
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.slim.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script></script>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,8 +17,10 @@
   <meta name="author" content="">
   <title>Fifa 19 randomizer</title>
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- JavaScript -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">  
+
+
+  
 </head>
 
 <body>
@@ -82,6 +86,9 @@
 </div>
 
 <?php
+
+
+
 foreach($helperClass->getPositions() as $value) { ?>
 <div class="modal fade" id="<?php echo $value; ?>Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
@@ -93,14 +100,19 @@ foreach($helperClass->getPositions() as $value) { ?>
         </button>
       </div>
       <div class="modal-body">
+
+      
+        
       <table class="table table-hover">
         <thead>
           <tr>
             <th scope="col">Photo</th>
             <th scope="col">Name</th>
+            <th scope="col">Nationality</th>
+            <th scope="col">Position</th>
             <th scope="col">Overall</th>
+            <th scope="col">Foot</th>
             <th scope="col">Sprintspeed</th>
-            <th scope="col">Skill moves</th>
             <th scope="col">Club</th>
           </tr>
         </thead>
@@ -111,9 +123,11 @@ foreach($helperClass->getPositions() as $value) { ?>
               <tr>
                 <td><img src="<?php echo $shuffledValue['Photo'] ; ?>"></td>
                 <td><?php echo $shuffledValue['Name'] ; ?></td>
+                <td><img src="<?php echo $shuffledValue['Flag'] ; ?>"></td>
+                <td><?php echo $shuffledValue['Position'] ; ?></td>
                 <td><?php echo $shuffledValue['Overall'] ; ?></td>
+                <td><?php echo $shuffledValue['Preferred Foot'] ; ?></td>
                 <td><?php echo $shuffledValue['SprintSpeed'] ; ?></td>
-                <td><?php echo $shuffledValue['Skill Moves'] ; ?></td>
                 <td><img src="<?php echo $shuffledValue['Club Logo'] ; ?>"></td>
               </tr>
             <?php
