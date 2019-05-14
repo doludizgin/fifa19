@@ -93,13 +93,14 @@ foreach($helperClass->getPositions() as $value) { ?>
         </button>
       </div>
       <div class="modal-body">
-      <table class="table">
+      <table class="table table-hover">
         <thead>
           <tr>
             <th scope="col">Name</th>
-            <th scope="col">Age</th>
-            <th scope="col">Nationality</th>
-            <th scope="col">Value</th>
+            <th scope="col">Overall</th>
+            <th scope="col">Sprintspeed</th>
+            <th scope="col">Club</th>
+            <th scope="col">Photo</th>
           </tr>
         </thead>
           <tbody>
@@ -108,13 +109,17 @@ foreach($helperClass->getPositions() as $value) { ?>
             ?>
               <tr>
                 <td><?php echo $shuffledValue['Name'] ; ?></td>
-                <td><?php echo $shuffledValue['Age'] ; ?></td>
-                <td><?php echo $shuffledValue['Nationality'] ; ?></td>
-                <td><?php echo $shuffledValue['Value'] ; ?></td>
+                <td><?php echo $shuffledValue['Overall'] ; ?></td>
+                <td><?php echo $shuffledValue['SprintSpeed'] ; ?></td>
+                <td><img src="<?php echo $shuffledValue['Club Logo'] ; ?>"></td>
+                <td><img src="<?php echo $shuffledValue['Photo'] ; ?>"></td>
               </tr>
             <?php
           }
           ?>
+
+
+
         </table>
       </div>
       <div class="modal-footer">
