@@ -10,6 +10,7 @@ class HelperClass {
 	}
 
 	function getPlayerPositions($set) {
+		$set = preg_replace("/[^a-zA-Z]/", "", $set);
 		$q = "SELECT * FROM players WHERE Position LIKE '".$set."' ORDER BY RAND() LIMIT 5";
 		$results = $this->connection->query($q);
 		
