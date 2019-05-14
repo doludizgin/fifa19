@@ -1,5 +1,6 @@
 <?php include_once("connect.php"); ?>
 <?php include_once("helper.class.cb.php"); ?>
+<?php $helperClass = new HelperClass(); ?>
 
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.slim.min.js"></script>
@@ -93,10 +94,6 @@
         </button>
       </div>
       <div class="modal-body">
-      
-      <?php
-      $helperClass = new HelperClass();
-      ?>
         <div>
 	    <?php
 		  $playerPositions = $helperClass->getPlayerPositions();
@@ -128,10 +125,6 @@
         </button>
       </div>
       <div class="modal-body">
-      
-      <?php
-      $helperClass = new HelperClass();
-      ?>
         <div>
 	    <?php
 		  $playerPositions = $helperClass->getPlayerPositions();
@@ -140,7 +133,6 @@
         echo $key;
         echo $value;
 		}
->>>>>>> 58dd859316bc4e12b41a6519cca78365be1553fa
 	    ?>
 
 </div>
