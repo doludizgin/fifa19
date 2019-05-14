@@ -88,9 +88,8 @@
 		  $playerPositions = $helperClass->getPlayerPositions();
 
 		  foreach($playerPositions as $key => $value) {
-			echo $value['Name'];
-
-		}
+        echo $value['Name'] . "<br />";
+      }
 	    ?>
 </div>
       </div>
