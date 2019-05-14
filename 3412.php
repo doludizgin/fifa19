@@ -94,17 +94,30 @@
         </button>
       </div>
       <div class="modal-body">
-        <div>
+    
 	    <?php
 		  $playerPositions = $helperClass->getPlayerPositions();
 
 		  foreach($playerPositions as $key => $value) {
-        echo $value['Name'] . "<br />";
+        #echo $value['Name'] . $value['Age'] .  "<br />";
 		  }
-	    ?>
+      ?>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+          </tr>
+        </thead>
+          <tbody>
+          <tr>
+            <td><?php echo $value['Name'] . ; ?></td>
+          </tr>
+        </table>
 
-</div>
+      
+
       </div>
+      
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
