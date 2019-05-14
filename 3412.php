@@ -96,11 +96,12 @@ foreach($helperClass->getPositions() as $value) { ?>
       <table class="table table-hover">
         <thead>
           <tr>
+            <th scope="col">Photo</th>
             <th scope="col">Name</th>
             <th scope="col">Overall</th>
             <th scope="col">Sprintspeed</th>
+            <th scope="col">Skill moves</th>
             <th scope="col">Club</th>
-            <th scope="col">Photo</th>
           </tr>
         </thead>
           <tbody>
@@ -108,11 +109,12 @@ foreach($helperClass->getPositions() as $value) { ?>
           foreach($helperClass->getShuffledPlayerPositions($value) as $shuffledKey => $shuffledValue) {
             ?>
               <tr>
+                <td><img src="<?php echo $shuffledValue['Photo'] ; ?>"></td>
                 <td><?php echo $shuffledValue['Name'] ; ?></td>
                 <td><?php echo $shuffledValue['Overall'] ; ?></td>
                 <td><?php echo $shuffledValue['SprintSpeed'] ; ?></td>
+                <td><?php echo $shuffledValue['Skill Moves'] ; ?></td>
                 <td><img src="<?php echo $shuffledValue['Club Logo'] ; ?>"></td>
-                <td><img src="<?php echo $shuffledValue['Photo'] ; ?>"></td>
               </tr>
             <?php
           }
