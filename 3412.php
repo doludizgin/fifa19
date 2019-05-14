@@ -105,14 +105,13 @@ foreach($helperClass->getPositions() as $value) { ?>
       <table class="table table-hover">
         <thead class="thead-dark">
           <tr>
-            <th scope="col">Photo</th>
+            <th scope="col"></th>
             <th scope="col">Name</th>
-            <th scope="col">Nationality</th>
+            <th class="text-center" scope="col">Nationality</th>
+            <th class="text-center" scope="col">Club</th>
             <th scope="col">Position</th>
             <th scope="col">Overall</th>
             <th scope="col">Foot</th>
-            <th scope="col">Speed</th>
-            <th scope="col">Club</th>
           </tr>
         </thead>
           <tbody>
@@ -122,12 +121,11 @@ foreach($helperClass->getPositions() as $value) { ?>
               <tr>
                 <td class="animated fadeIn slow delay-9s"><img src="<?php echo $shuffledValue['Photo'] ; ?>"></td>
                 <td class="animated fadeIn slow delay-10s"><?php echo $shuffledValue['Name'] ; ?></td>
-                <td class="animated fadeIn slow delay-3s"><img src="<?php echo $shuffledValue['Flag'] ; ?>"></td>
+                <td class="text-center animated fadeIn slow delay-3s"><img src="<?php echo $shuffledValue['Flag'] ; ?>"><br><?php echo $shuffledValue['Nationality'] ; ?></td>
+                <td class="text-center animated fadeIn slow delay-1s"><img src="<?php echo $shuffledValue['Club Logo'] ; ?>"><br><?php echo $shuffledValue['Club'] ; ?></td>
                 <td class="animated fadeIn slow delay-5s"><?php echo $shuffledValue['Position'] ; ?></td>
-                <td class="animated fadeIn slow delay-7s"><?php echo $shuffledValue['Overall'] ; ?></td>
+                <td class="animated fadeIn slow delay-10s"><?php echo $shuffledValue['Overall'] ; ?></td>
                 <td class="animated fadeIn slow delay-7s"><?php echo $shuffledValue['Preferred Foot'] ; ?></td>
-                <td class="animated fadeIn slow delay-7s"><?php echo $shuffledValue['SprintSpeed'] ; ?></td>
-                <td class="animated fadeIn slow delay-1s"><img src="<?php echo $shuffledValue['Club Logo'] ; ?>"></td>
               </tr>
             <?php
           }
