@@ -111,7 +111,7 @@ foreach($helperClass->getPositions() as $value) { ?>
             <th scope="col">Position</th>
             <th scope="col">Overall</th>
             <th scope="col">Foot</th>
-            <th scope="col">Sprintspeed</th>
+            <th scope="col">Speed</th>
             <th scope="col">Club</th>
           </tr>
         </thead>
