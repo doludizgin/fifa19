@@ -5,8 +5,8 @@ class HelperClass {
 	private $connection;
 
 	function __construct() {
-		// $this->connection = new mysqli("localhost", "semi", "Doludizgin55", "fifa19");
-		$this->connection = new mysqli("localhost", "root", "root", "fifa");
+		$this->connection = new mysqli("localhost", "semi", "Doludizgin55", "fifa19");
+		// $this->connection = new mysqli("localhost", "root", "root", "fifa");
 	}
 
 	function getPlayerPositions($set) {
@@ -32,7 +32,7 @@ class HelperClass {
 	}
 
 	function getPositions() {
-		return ['CB', 'GK', 'CM'];
+		return ['CB1','CB2','CB3', 'GK1', 'CM1', 'CM2'];
 	}
 }
 ?>
