@@ -97,21 +97,29 @@
     
 	    <?php
 		  $playerPositions = $helperClass->getPlayerPositions();
-
-		  foreach($playerPositions as $key => $value) {
-        #echo $value['Name'] . $value['Age'] .  "<br />";
-		  }
       ?>
       <table class="table">
         <thead>
           <tr>
             <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Nationality</th>
+            <th scope="col">Value</th>
           </tr>
         </thead>
           <tbody>
-          <tr>
-            <td><?php echo $value['Name'] ; ?></td>
-          </tr>
+          <?php
+          foreach($playerPositions as $key => $value) {
+            ?>
+              <tr>
+                <td><?php echo $value['Name'] ; ?></td>
+                <td><?php echo $value['Age'] ; ?></td>
+                <td><?php echo $value['Nationality'] ; ?></td>
+                <td><?php echo $value['Value'] ; ?></td>
+              </tr>
+            <?php
+          }
+          ?>
         </table>
 
       
