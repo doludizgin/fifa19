@@ -1,0 +1,116 @@
+<?php include("connect.php"); ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Fifa 19 randomizer</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- JavaScript -->
+  <style type="text/css">
+    .box{
+        color: #000;
+        padding: 20px;
+        display: none;
+        margin-top: 20px;
+    }
+    .red{ background: #FFFFFF; }
+    .green{ background: #FFFFFF; }
+    .blue{ background: #0000ff; }
+    .semi{ background: #FFFFFF; }
+</style>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("select").change(function(){
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+                $(".box").not("." + optionValue).hide();
+                $("." + optionValue).show();
+            } else{
+                $(".box").hide();
+            }
+        });
+    }).change();
+});
+</script>
+  
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Fifa 19 randomizer</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ 
+
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center ">
+        <h1 class="mt-5">Fifa 19 randomizer</h1>
+        <p class="lead">The formation describes how the players in a team generally position themselves on the pitch</p>
+  </button>
+  <div class="dropdown">
+        <select class="custom-select">
+            <option>Choose formation</option>
+            <option value="red">3-4-1-2</option>
+            <option value="green">3-4-3</option>
+            <option value="semi">4-1-2-1-2</option>
+        </select>
+    </div>
+    <div class="red box">You have selected 3-4-1-2 <br> <img src="images/3-4-1-2.png"><br><br><a href="3412.php" class="btn btn-success" role="button">Continue with formation</a></div>
+    <div class="green box">You have selected 3-4-3 <br> <img src="images/3-4-3.png"><br><br><a href="3412.php" class="btn btn-success" role="button">Continue with formation</a></div>
+    <div class="semi box">You have selected 4-1-2-1-2 <br> <img src="images/4-1-2-1-2.png"><br><br><a href="3412.php" class="btn btn-success" role="button">Continue with formation</a></div>
+  </div>
+
+  
+</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
