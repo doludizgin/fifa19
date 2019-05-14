@@ -9,8 +9,9 @@ class HelperClass {
 		$this->connection = new mysqli("localhost", "root", "root", "fifa");
 	}
 
-	function getPlayerPositions() {
-		$results = $this->connection->query("SELECT * FROM players WHERE Position LIKE '%CB%' ORDER BY RAND() LIMIT 5");
+	function getPlayerPositions($set) {
+		$q = "SELECT * FROM players WHERE Position LIKE '".$set."' ORDER BY RAND() LIMIT 5";
+		$results = $this->connection->query($q);
 		
 		if ($results->num_rows > 0) {
 			// output data of each row
@@ -24,8 +25,8 @@ class HelperClass {
 		return $res;
 	}
 
-	function getShuffledPlayerPositions() {
-		$positions = $this->getPlayerPositions();
+	function getShuffledPlayerPositions($set) {
+		$positions = $this->getPlayerPositions($set);
 		return $positions;
 	}
 

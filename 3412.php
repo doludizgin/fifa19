@@ -104,13 +104,13 @@ foreach($helperClass->getPositions() as $value) { ?>
         </thead>
           <tbody>
           <?php
-          foreach($helperClass->getShuffledPlayerPositions() as $key => $value) {
+          foreach($helperClass->getShuffledPlayerPositions($value) as $shuffledKey => $shuffledValue) {
             ?>
               <tr>
-                <td><?php echo $value['Name'] ; ?></td>
-                <td><?php echo $value['Age'] ; ?></td>
-                <td><?php echo $value['Nationality'] ; ?></td>
-                <td><?php echo $value['Value'] ; ?></td>
+                <td><?php echo $shuffledValue['Name'] ; ?></td>
+                <td><?php echo $shuffledValue['Age'] ; ?></td>
+                <td><?php echo $shuffledValue['Nationality'] ; ?></td>
+                <td><?php echo $shuffledValue['Value'] ; ?></td>
               </tr>
             <?php
           }
