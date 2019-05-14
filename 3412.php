@@ -110,7 +110,7 @@
         </thead>
           <tbody>
           <tr>
-            <td><?php echo $value['Name'] . ; ?></td>
+            <td><?php echo $value['Name'] ; ?></td>
           </tr>
         </table>
 
