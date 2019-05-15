@@ -72,8 +72,7 @@
     <div class="col">
       <h1 class="mt-5">Selected players</h1>
 
-      <table class="table table-hover" id="my_schedules">
-        <thead class="thead-dark">
+      <table class="table" id="my_schedules">
           <tr>
             <th scope="col"></th>
             <th scope="col"></th>
@@ -82,7 +81,6 @@
             <th class="text-center" scope="col">Club</th>
             <th scope="col">Position</th>
             <th scope="col">Overall</th>
-            <th scope="col">Foot</th>
           </tr>
 
 
@@ -129,7 +127,7 @@ foreach($helperClass->getPositions() as $value) { ?>
                 <td class="align-middle text-center animated fadeIn slower"><img src="<?php echo $shuffledValue['Club Logo'] ; ?>"><br><?php echo $shuffledValue['Club'] ; ?></td>
                 <td class="align-middle text-center animated fadeIn slower"><?php echo $shuffledValue['Position'] ; ?></td>
                 <td class="align-middle text-center animated fadeIn slower"><?php echo $shuffledValue['Overall'] ; ?></td>
-                <td class="align-middle animated fadeIn slower"><?php echo $shuffledValue['Preferred Foot'] ; ?></td>
+                <td class="prefferedfoot align-middle animated fadeIn slower"><?php echo $shuffledValue['Preferred Foot'] ; ?></td>
               </tr>
             <?php
           }
