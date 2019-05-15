@@ -26,6 +26,8 @@ class HelperClass {
 		return $res;
 	}
 
+	
+
 	function getShuffledPlayerPositions($set) {
 		$positions = $this->getPlayerPositions($set);
 		return $positions;

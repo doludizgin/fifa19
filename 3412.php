@@ -5,7 +5,6 @@
 <script src="vendor/jquery/jquery.slim.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -106,7 +105,7 @@ foreach($helperClass->getPositions() as $value) { ?>
           foreach($helperClass->getShuffledPlayerPositions($value) as $shuffledKey => $shuffledValue) {
             ?>
               <tr>
-                <td class="align-middle animated fadeIn slower"><button type="button" class="btn btn-success">Select player</button></td>
+                <td class="align-middle animated fadeIn slower"><button type="button" class="btn btn-success">Select</button></td>
                 <td class="align-middle animated fadeIn slower"><img src="<?php echo $shuffledValue['Photo'] ; ?>"></td>
                 <td class="align-middle animated fadeIn slower"><?php echo $shuffledValue['Name'] ; ?></td>
                 <td class="align-middle text-center animated fadeIn slower"><img src="<?php echo $shuffledValue['Flag'] ; ?>"><br><?php echo $shuffledValue['Nationality'] ; ?></td>
@@ -125,6 +124,7 @@ foreach($helperClass->getPositions() as $value) { ?>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
