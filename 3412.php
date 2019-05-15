@@ -119,13 +119,13 @@ foreach($helperClass->getPositions() as $value) { ?>
           foreach($helperClass->getShuffledPlayerPositions($value) as $shuffledKey => $shuffledValue) {
             ?>
               <tr>
-                <td class="animated fadeIn slow delay-9s"><img src="<?php echo $shuffledValue['Photo'] ; ?>"></td>
-                <td class="animated fadeIn slow delay-10s"><?php echo $shuffledValue['Name'] ; ?></td>
-                <td class="text-center animated fadeIn slow delay-3s"><img src="<?php echo $shuffledValue['Flag'] ; ?>"><br><?php echo $shuffledValue['Nationality'] ; ?></td>
-                <td class="text-center animated fadeIn slow delay-1s"><img src="<?php echo $shuffledValue['Club Logo'] ; ?>"><br><?php echo $shuffledValue['Club'] ; ?></td>
-                <td class="animated fadeIn slow delay-5s"><?php echo $shuffledValue['Position'] ; ?></td>
-                <td class="animated fadeIn slow delay-10s"><?php echo $shuffledValue['Overall'] ; ?></td>
-                <td class="animated fadeIn slow delay-7s"><?php echo $shuffledValue['Preferred Foot'] ; ?></td>
+                <td class="animated fadeIn slower"><img src="<?php echo $shuffledValue['Photo'] ; ?>"></td>
+                <td class="animated fadeIn slower"><?php echo $shuffledValue['Name'] ; ?></td>
+                <td class="text-center animated fadeIn slower"><img src="<?php echo $shuffledValue['Flag'] ; ?>"><br><br><?php echo $shuffledValue['Nationality'] ; ?></td>
+                <td class="text-center animated fadeIn slower"><img src="<?php echo $shuffledValue['Club Logo'] ; ?>"><br><br><?php echo $shuffledValue['Club'] ; ?></td>
+                <td class="animated fadeIn slower"><?php echo $shuffledValue['Position'] ; ?></td>
+                <td class="animated fadeIn slower"><?php echo $shuffledValue['Overall'] ; ?></td>
+                <td class="animated fadeIn slower"><?php echo $shuffledValue['Preferred Foot'] ; ?></td>
               </tr>
             <?php
           }
