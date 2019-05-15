@@ -104,13 +104,13 @@ foreach($helperClass->getPositions() as $value) { ?>
           foreach($helperClass->getShuffledPlayerPositions($value) as $shuffledKey => $shuffledValue) {
             ?>
               <tr>
-                <td class="animated fadeIn slower"><img src="<?php echo $shuffledValue['Photo'] ; ?>"></td>
-                <td class="animated fadeIn slower"><?php echo $shuffledValue['Name'] ; ?></td>
-                <td class="text-center animated fadeIn slower"><img src="<?php echo $shuffledValue['Flag'] ; ?>"><br><br><?php echo $shuffledValue['Nationality'] ; ?></td>
-                <td class="text-center animated fadeIn slower"><img src="<?php echo $shuffledValue['Club Logo'] ; ?>"><br><br><?php echo $shuffledValue['Club'] ; ?></td>
-                <td class="animated fadeIn slower"><?php echo $shuffledValue['Position'] ; ?></td>
-                <td class="animated fadeIn slower"><?php echo $shuffledValue['Overall'] ; ?></td>
-                <td class="animated fadeIn slower"><?php echo $shuffledValue['Preferred Foot'] ; ?></td>
+                <td class="align-middle animated fadeIn slower"><img src="<?php echo $shuffledValue['Photo'] ; ?>"></td>
+                <td class="align-middle animated fadeIn slower"><?php echo $shuffledValue['Name'] ; ?></td>
+                <td class="align-middle text-center animated fadeIn slower"><img src="<?php echo $shuffledValue['Flag'] ; ?>"><br><?php echo $shuffledValue['Nationality'] ; ?></td>
+                <td class="align-middle text-center animated fadeIn slower"><img src="<?php echo $shuffledValue['Club Logo'] ; ?>"><br><?php echo $shuffledValue['Club'] ; ?></td>
+                <td class="align-middle text-center animated fadeIn slower"><?php echo $shuffledValue['Position'] ; ?></td>
+                <td class="align-middle text-center animated fadeIn slower"><?php echo $shuffledValue['Overall'] ; ?></td>
+                <td class="align-middle animated fadeIn slower"><?php echo $shuffledValue['Preferred Foot'] ; ?></td>
               </tr>
             <?php
           }
