@@ -70,7 +70,7 @@
       </map>
     </div>
     <div class="col">
-      <h1 class="mt-5">Selected players</h1>
+      <h1 class="mt-5 text-center">Selected players</h1>
 
       <table class="table" id="my_schedules">
           <tr>
@@ -139,7 +139,6 @@ foreach($helperClass->getPositions() as $value) { ?>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
