@@ -1,4 +1,3 @@
-<?php include_once("connect.php"); ?>
 <?php include_once("helper.class.cb.php"); ?>
 <?php $helperClass = new HelperClass(); ?>
 
