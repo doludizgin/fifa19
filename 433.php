@@ -53,21 +53,53 @@
   <div class="container">
     <div class="row">
     <div class="col">
-      <h1 class="mt-5">You have selected 3-4-3</h1>
-      <img src="images/3-4-3.png" usemap="#image-map">
+      <h1 class="mt-5">You have selected 4-3-3</h1>
+      <img src="images/4-3-3.png" usemap="#image-map">
       <map name="image-map">
           <area target="" alt="CB" href="#" data-toggle="modal" data-target="#GK1Modal" coords="251,609,35" shape="circle">
-          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#CB1Modal" coords="125,500,33" shape="circle">
-          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#CB2Modal" coords="250,501,33" shape="circle">
-          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#CB3Modal" coords="375,502,31" shape="circle">
-          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#CM1Modal" coords="180,328,33" shape="circle">
-          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#CM2Modal" coords="322,331,33" shape="circle">
-          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#LM1Modal" coords="90,270,34"  shape="circle">
-          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#LW1Modal"coords="132,151,28" shape="circle">
-          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#RM1Modal" coords="410,270,28" shape="circle">
+          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#LB1Modal" coords="92,480,30" shape="circle">
+          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#CB1Modal" coords="190,501,26" shape="circle">
+          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#CB2Modal" coords="313,501,28" shape="circle">
+          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#RB1Modal" coords="409,482,29" shape="circle">
+          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#CM1Modal" coords="249,311,26" shape="circle">
+          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#CM2Modal" coords="173,290,29"  shape="circle">
+          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#CM3Modal"coords="329,292,25" shape="circle">
           <area target="" alt="CB" href="#" data-toggle="modal" data-target="#RW1Modal" coords="370,150,28" shape="circle">
+          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#LW1Modal" coords="132,151,28" shape="circle">
           <area target="" alt="CB" href="#" data-toggle="modal" data-target="#ST1Modal" coords="250,110,28" shape="circle">
       </map>
+
+
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Random1">Sub1</button>
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Random2">Sub2</button>
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Random3">Sub3</button>
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Random4">Sub4</button>
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Random5">Sub5</button>
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Random6">Sub6</button>
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Random7">Sub7</button>
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Random8">Sub8</button>
+
+
+      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="Random1" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+      
+
     </div>
     <div class="col">
       <h1 class="mt-5 text-center">Selected players</h1>

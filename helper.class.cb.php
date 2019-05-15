@@ -34,7 +34,7 @@ class HelperClass {
 	}
 
 	function getPositions() {
-		return ['CB1','CB2','CB3', 'GK1', 'CM1', 'CM2', 'LM1' ,'CAM1' ,'RM1', 'ST1','ST2'];
+		return ['CB1','CB2','CB3', 'GK1', 'CM1', 'CM2', 'CM3', 'CM4', 'LM1' ,'CAM1' ,'RM1', 'ST1','ST2', 'LW1', 'RW1', 'LB1', 'RB1', 'CDM1'];
 	}
 }
 ?>
