@@ -71,6 +71,22 @@
     </div>
     <div class="col">
       <h1 class="mt-5">Selected players</h1>
+
+      <table class="table table-hover" id="my_schedules">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col">Name</th>
+            <th class="text-center" scope="col">Nationality</th>
+            <th class="text-center" scope="col">Club</th>
+            <th scope="col">Position</th>
+            <th scope="col">Overall</th>
+            <th scope="col">Foot</th>
+          </tr>
+
+
+      </table>
     </div>
   </div>
 <?php
@@ -132,7 +148,6 @@ foreach($helperClass->getPositions() as $value) { ?>
 </div>
 <?php } ?>
 
-<table id="my_schedules"></table>
 
 </body>
 </html>
