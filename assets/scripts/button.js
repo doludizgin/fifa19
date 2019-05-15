@@ -1,7 +1,6 @@
-$(document).ready(function() {
-    $(".btn btn-success").click(function() {
-      var html = $(this).closest("tr").clone().find('td:last').remove().end().prop('outerHTML');
-      $("#my_schedules").append(html);
-    });
+$(document).ready(function () {
+  $(".add-player-to-list").on('click', function () {
+    var html = $(this).closest("tr").html();
+    $("#my_schedules").append("<tr>" + html + "</tr>");
   });
-  
+});
