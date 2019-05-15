@@ -5,6 +5,7 @@
 <script src="vendor/jquery/jquery.slim.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
