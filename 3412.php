@@ -91,6 +91,7 @@ foreach($helperClass->getPositions() as $value) { ?>
         <thead class="thead-dark">
           <tr>
             <th scope="col"></th>
+            <th scope="col"></th>
             <th scope="col">Name</th>
             <th class="text-center" scope="col">Nationality</th>
             <th class="text-center" scope="col">Club</th>
@@ -104,6 +105,7 @@ foreach($helperClass->getPositions() as $value) { ?>
           foreach($helperClass->getShuffledPlayerPositions($value) as $shuffledKey => $shuffledValue) {
             ?>
               <tr>
+                <td class="align-middle animated fadeIn slower"><button type="button" class="btn btn-success">Select player</button></td>
                 <td class="align-middle animated fadeIn slower"><img src="<?php echo $shuffledValue['Photo'] ; ?>"></td>
                 <td class="align-middle animated fadeIn slower"><?php echo $shuffledValue['Name'] ; ?></td>
                 <td class="align-middle text-center animated fadeIn slower"><img src="<?php echo $shuffledValue['Flag'] ; ?>"><br><?php echo $shuffledValue['Nationality'] ; ?></td>
@@ -122,7 +124,6 @@ foreach($helperClass->getPositions() as $value) { ?>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
