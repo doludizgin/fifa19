@@ -9,9 +9,13 @@ class HelperClass {
 		// $this->connection = new mysqli("localhost", "root", "root", "fifa");
 	}
 
-	function getPlayerPositions($set) {
+	function getPlayerPositions($set = null) {
 		$set = preg_replace("/[^a-zA-Z]/", "", $set);
-		$q = "SELECT * FROM players WHERE Position LIKE '".$set."' ORDER BY RAND() LIMIT 5";
+		if($set != null){
+			$q = "SELECT * FROM players WHERE Position LIKE '".$set."' ORDER BY RAND() LIMIT 5";
+		} else {
+			$q = "SELECT * FROM players ORDER BY RAND() LIMIT 5";
+		}
 		$results = $this->connection->query($q);
 		
 		if ($results->num_rows > 0) {
