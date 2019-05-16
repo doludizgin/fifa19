@@ -56,7 +56,7 @@
       <h1 class="mt-5">You have selected 3-4-1-2</h1>
       <img src="images/3-4-1-2.png" usemap="#image-map">
       <map name="image-map">
-          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#GK1Modal" coords="251,609,35" shape="circle">
+          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#GK1" coords="251,609,35" shape="circle">
           <area target="" alt="CB" href="#" data-toggle="modal" data-target="#CB1Modal" coords="125,500,33" shape="circle">
           <area target="" alt="CB" href="#" data-toggle="modal" data-target="#CB2Modal" coords="250,501,33" shape="circle">
           <area target="" alt="CB" href="#" data-toggle="modal" data-target="#CB3Modal" coords="375,502,31" shape="circle">
