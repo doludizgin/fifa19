@@ -1,0 +1,112 @@
+[
+	{
+		"position": "CB1",
+		"type": "player",
+		"coords": "125,500,33"
+	},
+	{
+		"position": "CB2",
+		"type": "player",
+		"coords": "250,501,33"
+	},
+	{
+		"position": "CB3",
+		"type": "player",
+		"coords": "375,502,31"
+	},
+	{
+		"position": "GK1",
+		"type": "player",
+		"coords": "251,609,35"
+	},
+	{
+		"position": "CM1",
+		"type": "player",
+		"coords": "180,328,33"
+	},
+	{
+		"position": "CM2",
+		"type": "player",
+		"coords": "322,331,33"
+	},
+	{
+		"position": "CM3",
+		"type": "player"
+	},
+	{
+		"position": "CM4",
+		"type": "player"
+	},
+	{
+		"position": "LM1",
+		"type": "player",
+		"coords": "90,270,34"
+	},
+	{
+		"position": "CAM1",
+		"type": "player",
+		"coords": "251,229,31"
+	},
+	{
+		"position": "RM1",
+		"type": "player",
+		"coords": "410,270,28"
+	},
+	{
+		"position": "ST1",
+		"type": "player",
+		"coords": "320,110,29"
+	},
+	{
+		"position": "LW1",
+		"type": "player"
+	},
+	{
+		"position": "RW1",
+		"type": "player"
+	},
+	{
+		"position": "LB1",
+		"type": "player"
+	},
+	{
+		"position": "RB1",
+		"type": "player"
+	},
+	{
+		"position": "CDM1",
+		"type": "player"
+	},
+	{
+		"position": "sub1",
+		"type": "player"
+	},
+	{
+		"position": "sub2",
+		"type": "player"
+	},
+	{
+		"position": "sub3",
+		"type": "player"
+	},
+	{
+		"position": "sub4",
+		"type": "player"
+	},
+	{
+		"position": "sub5",
+		"type": "player"
+	},
+	{
+		"position": "sub6",
+		"type": "player"
+	},
+	{
+		"position": "sub7",
+		"type": "player"
+	},
+	{
+		"position": "sub8",
+		"type": "player"
+	}
+]
