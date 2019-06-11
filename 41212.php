@@ -53,18 +53,28 @@
   <div class="container">
     <div class="row">
     <div class="col">
-      <h1 class="mt-5">You have selected 4-1-2-1-2</h1>
+      <h1 class="mt-5">Select your team</h1>
       <img src="images/4-1-2-1-2.png" usemap="#image-map">
       <map name="image-map">
           <area target="" alt="CB" href="#" data-toggle="modal" data-target="#GK1Modal" coords="251,609,35" shape="circle">
+          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#GK2Modal" coords="162,610,25" shape="circle">
+          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#GK3Modal" coords="337,611,22" shape="circle">
           <area target="" alt="CB" href="#" data-toggle="modal" data-target="#LB1Modal" coords="92,480,30" shape="circle">
           <area target="" alt="CB" href="#" data-toggle="modal" data-target="#CB1Modal" coords="190,501,26" shape="circle">
           <area target="" alt="CB" href="#" data-toggle="modal" data-target="#CB2Modal" coords="313,501,28" shape="circle">
+          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#CB3Modal" coords="250,501,24" shape="circle">
+          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#CM1Modal" coords="152,318,24" shape="circle">
+          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#CM2Modal" coords="250,324,22" shape="circle">
+          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#CM3Modal" coords="344,317,22" shape="circle">
           <area target="" alt="CB" href="#" data-toggle="modal" data-target="#RB1Modal" coords="409,482,29" shape="circle">
           <area target="" alt="CB" href="#" data-toggle="modal" data-target="#CDM1Modal" coords="250,400,29" shape="circle">
           <area target="" alt="CB" href="#" data-toggle="modal" data-target="#LM1Modal" coords="90,270,34"  shape="circle">
           <area target="" alt="CB" href="#" data-toggle="modal" data-target="#CAM1Modal"coords="251,229,31" shape="circle">
           <area target="" alt="CB" href="#" data-toggle="modal" data-target="#RM1Modal" coords="410,270,28" shape="circle">
+          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#LW1Modal" coords="135,151,24" shape="circle">
+          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#RW1Modal" coords="371,150,21" shape="circle">
+          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#CF1Modal" coords="205,174,21" shape="circle">
+          <area target="" alt="CB" href="#" data-toggle="modal" data-target="#CF2Modal" coords="303,176,25" shape="circle">
           <area target="" alt="CB" href="#" data-toggle="modal" data-target="#ST1Modal" coords="180,109,31" shape="circle">
           <area target="" alt="CB" href="#" data-toggle="modal" data-target="#ST2Modal" coords="320,110,29" shape="circle">
       </map>

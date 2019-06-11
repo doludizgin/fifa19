@@ -1,20 +1,17 @@
 <?php
+
+////////////////////////////// helper.class.php
 class HelperClass {
 	private $connection;
 
 	function __construct() {
-		// $this->connection = new mysqli("localhost", "semi", "Doludizgin55", "fifa19");
-		$this->connection = new mysqli("localhost", "root", "root", "fifa");
+		$this->connection = new mysqli("localhost", "semi", "Doludizgin55", "fifa19");
+		// $this->connection = new mysqli("localhost", "root", "root", "fifa");
 	}
 
 	function getPlayerPositions($set) {
-		$set = strtolower(preg_replace("/[^a-zA-Z]/", "", $set));
-
-		if($set != "sub"){
-			$q = "SELECT * FROM players WHERE Position LIKE '".$set."' ORDER BY RAND() LIMIT 5";
-		} else {
-			$q = "SELECT * FROM players ORDER BY RAND() LIMIT 5";
-		}
+		$set = preg_replace("/[^a-zA-Z]/", "", $set);
+		$q = "SELECT * FROM players WHERE Position LIKE '".$set."' ORDER BY RAND() LIMIT 5";
 		$results = $this->connection->query($q);
 		
 		if ($results->num_rows > 0) {
@@ -29,13 +26,15 @@ class HelperClass {
 		return $res;
 	}
 
+	
+
 	function getShuffledPlayerPositions($set) {
-		return $this->getPlayerPositions($set);
+		$positions = $this->getPlayerPositions($set);
+		return $positions;
 	}
 
 	function getPositions() {
-		$json = file_get_contents('./data/players.json');
-		return json_decode($json,true);
+		return ['CB1','CB2','CB3', 'GK1', 'GK2', 'GK3', 'CM1', 'CM2', 'CM3', 'CM4', 'LM1' ,'CAM1' ,'RM1', 'ST1','ST2', 'LW1', 'RW1', 'LB1', 'RB1', 'CDM1','CF1','CF2'];
 	}
 }
 ?>

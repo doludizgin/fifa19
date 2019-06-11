@@ -2,6 +2,8 @@ $(document).ready(function () {
   $(".add-player-to-list").on('click', function () {
     var html = $(this).closest("tr").html();
     $('#GK1Modal').modal('hide');
+    $('#GK2Modal').modal('hide');
+    $('#GK3Modal').modal('hide');
     $('#CB1Modal').modal('hide');
     $('#CB2Modal').modal('hide');
     $('#CB3Modal').modal('hide');
@@ -16,9 +18,13 @@ $(document).ready(function () {
     $('#ST2Modal').modal('hide');
     $('#RW1Modal').modal('hide');
     $('#RW2Modal').modal('hide');
-    $('#LW12Modal').modal('hide');
+    $('#LW1Modal').modal('hide');
     $('#RW1Modal').modal('hide');
+    $('#LB1Modal').modal('hide');
+    $('#RB1Modal').modal('hide');
     $('#CDM1Modal').modal('hide');
+    $('#CF1Modal').modal('hide');
+    $('#CF2Modal').modal('hide');
     $("#my_schedules").append("<tr>" + html + "</tr>");
     $("#my_schedules").find(".add-player-to-list").remove();
     $("#my_schedules").find(".prefferedfoot").remove();

@@ -70,14 +70,6 @@
       </map>
 
 
-      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#sub1">Sub1</button>
-      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#sub2">Sub2</button>
-      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#sub3">Sub3</button>
-      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#sub4">Sub4</button>
-      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#sub5">Sub5</button>
-      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#sub6">Sub6</button>
-      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#sub7">Sub7</button>
-      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#sub8">Sub8</button>
 
 
       <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="Random1" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -87,6 +79,19 @@
     </div>
   </div>
 </div>
+
+    
+
+
+
+
+
+
+
+
+
+      
+
     </div>
     <div class="col">
       <h1 class="mt-5 text-center">Selected players</h1>
@@ -101,12 +106,14 @@
             <th scope="col">Position</th>
             <th scope="col">Overall</th>
           </tr>
+
+
       </table>
     </div>
   </div>
 <?php
-foreach($helperClass->getSubPositions() as $value) { ?>
-<div class="modal fade" id="<?php echo $value; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+foreach($helperClass->getPositions() as $value) { ?>
+<div class="modal fade" id="<?php echo $value; ?>Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -115,7 +122,10 @@ foreach($helperClass->getSubPositions() as $value) { ?>
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body"></div>
+      <div class="modal-body">
+
+      
+        
       <table class="table table-hover">
         <thead class="thead-dark">
           <tr>
